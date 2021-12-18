@@ -1,0 +1,10 @@
+[EXCEPTION_sdb]@read --> no such column: user
+[ DEBUG ] query	--> SELECT id, user FROM user WHERE type=1;
+[EXCEPTION_sdb]@read --> no such table: specialization
+[ DEBUG ] query	--> SELECT id, spname FROM specialization;
+[EXCEPTION_sdb]@read --> no such column: user
+[ DEBUG ] query	--> SELECT id, user FROM user WHERE type=1;
+[EXCEPTION_sdb]@read --> no such table: specialization
+[ DEBUG ] query	--> SELECT id, spname FROM specialization;
+[EXCEPTION_sdsb]@execute --> UNIQUE constraint failed: UserAppointment.id
+[ DEBUG ] query--> UPDATE userAppointment SET  id='1' ,  userid='1' ,  doctor_id='3' ,  timefrom='11:00am' ,  timeto='12:09pm' ,  day='2021-12-17' ,  status='1' 

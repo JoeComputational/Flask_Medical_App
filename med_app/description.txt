@@ -1,0 +1,97 @@
+*********************
+        TABLES
+*********************
+1) User
+> userid
+> username
+> password
+> role    -> three roles USER(0), DOCTOR(1) and ADMIN(2)
+
+2) UserDetail
+> userid	-> userid in User table
+> firstname
+> lastname
+> address
+> phonenumber
+
+3) UserLog
+> logid
+> userid	-> userid in User table
+> datetime
+> bloodpressure
+> temperature
+> generalmood
+> medicationsdue
+
+4) UserAppointment
+> id
+> doctorid	-> doctor
+> from		-> appointment start time
+> to		-> appointment end time
+> day		-> appointment day
+> approved	-> 0requested, 1(not approved) or 2(approved) 
+
+5) DoctorDetail
+> doctorid	-> userid in User table
+> specializationid
+> availablefrom
+> availableto
+
+6) DoctorSpecialization
+> id
+> name
+
+***************************************************************************************************************************************************
+
+-> Login
+	- If role is USER - open user dashboard elif DOCTOR open doctor dashboard otherwise ADMIN
+
+*********************
+    User Dashboard
+*********************
+
+-> Enter Log
+	- datetime [auto enter]
+	- blood pressure
+	- temperature
+	- general mood
+	- medications due for the day [string]
+
+-> View All Logs
+	-> in simple table
+	-> filter by datetieme
+
+-> Request Appointment
+	- doctor-> doctor
+	- day	-> appointment day
+	- from	-> appointment start time
+	- to	-> appointment end time
+ 
+-> View Appointments (User and Appointment Join) 
+	Filter By Approved, Not Approved, Requested and All
+	-> in simple table
+	
+-> View Doctors
+	- in simple tables
+	- Filter doctors by speciallization -> (Join Doctor & Specialization)
+ 
+*********************
+  Doctor Dashboard 
+*********************
+	-> View Requested Appointments 
+		- in simple table
+		- approve or reject an appointment
+
+	-> View Scheduled Appointments [Join appointments table with doctorid]
+		-in simple table
+
+*********************
+   ADMIN Dashboard
+*********************
+	- create user 		-> Data entry for User and UserDetail table
+	- create doctor 	-> Data entry for User, UserDetail and DoctorDetail table
+	- add specialization	-> Data Entry for DoctorSpecialization table
+	Optional
+	Update and remove options for above 'create user', 'create doctor' and 'add specialization' 
+ 
+***************************************************************************************************************************************************

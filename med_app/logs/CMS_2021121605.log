@@ -1,0 +1,10 @@
+[EXCEPTION_sdsb]@save --> near ")": syntax error
+[EXCEPTION_sdsb]@save --> near ")": syntax error
+[EXCEPTION_sdsb]@save --> near ")": syntax error
+[ DEBUG ] query--> INSERT INTO specializations(spname) VALUES('Eye Specialist',);
+[EXCEPTION_sdsb]@save --> near ")": syntax error
+[ DEBUG ] query--> INSERT INTO specializations(spname) VALUES('Eye Specialist',);
+[EXCEPTION_sdsb]@save --> near ")": syntax error
+[ DEBUG ] query--> INSERT INTO specializations(spname) VALUES('Eye Specialist',);
+[EXCEPTION_sdsb]@save --> near "Specialist": syntax error
+[ DEBUG ] query--> INSERT INTO specializations(spname) VALUES(Eye Specialist);

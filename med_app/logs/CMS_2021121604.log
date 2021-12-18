@@ -1,0 +1,24 @@
+[EXCEPTION_sdb]@execute_select --> no such column: ua.status
+[16-12-2021 04:46:15][INFO] query	-->  SELECT ua.id, ua.timefrom, ua.timeto, ua.day, ua.status, 
+                            dd.fname, dd.lname 
+                            FROM UserAppointment as ua JOIN doctorDetails as dd 
+                            ON ua.doctor_id = dd.userid 
+                            WHERE ua.userid=2
+[EXCEPTION_sdb]@execute_select --> no such column: ua.status
+[16-12-2021 04:46:32][INFO] query	-->  SELECT ua.id, ua.timefrom, ua.timeto, ua.day, ua.status, 
+                            dd.fname, dd.lname 
+                            FROM UserAppointment as ua JOIN doctorDetails as dd 
+                            ON ua.doctor_id = dd.userid 
+                            WHERE ua.userid=2
+[EXCEPTION_sdb]@execute_select --> no such column: ua.status
+[16-12-2021 04:47:43][INFO] query	-->  SELECT ua.id, ua.timefrom, ua.timeto, ua.day, ua.status, 
+                            dd.fname, dd.lname 
+                            FROM UserAppointment as ua JOIN doctorDetails as dd 
+                            ON ua.doctor_id = dd.userid 
+                            WHERE ua.userid=1
+[EXCEPTION_sdb]@execute_select --> no such column: dd.fname
+[16-12-2021 04:50:04][INFO] query	-->  SELECT ua.id, ua.timefrom, ua.timeto, ua.day, ua.status, 
+                            dd.fname, dd.lname 
+                            FROM UserAppointment as ua JOIN doctorDetails as dd 
+                            ON ua.doctor_id = dd.userid 
+                            WHERE ua.userid=1

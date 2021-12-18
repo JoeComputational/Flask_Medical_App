@@ -1,0 +1,46 @@
+************************************************************************************
+***********************!CURRENT ACTIVE LOGINS!**************************************
+************************************************************************************
+BASE LEVEL USER              DOCTOR USER                    ADMIN USER
+username: user               username: doctor               username: admin
+password: user               password: doctor               password: admin
+
+************************************************************************************
+
+****************************
+How to install requirements
+****************************
+
+> Open command line terminal in this folder
+
+> To install requirements 	-> pip install -r requirements.txt
+
+> To run project 		-> python main.py
+
+************************************************************************************
+
+********************************
+To replace sqlite by postgresql 
+********************************
+> create database tables as in database.db
+> replace line 4 in main.py by: 
+from postgresql import PostgreSQL
+
+> replace line 7 in main.py by:
+db_driver   = PostgreSQL("your_host", "your_database", "user_name", "password")
+
+* NOTE: please change connection parameters before replacing line 7
+
+You are good to go, project should now work with postgresql instead of SQLite
+
+************************************************************************************
+
+*************************************
+How to save database data into files 
+*************************************
+
+> open commandline terminal in current directory
+> run -> python copy_data.py
+	- enter folder name
+
+The script will create a new folder under the name you entered, all data will be saved in json files within the folder. 

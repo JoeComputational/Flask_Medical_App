@@ -1,0 +1,5 @@
+[EXCEPTION_sdb]@execute_select --> near "FROM": syntax error
+[16-12-2021 06:10:55][INFO] query	-->  SELECT u.id, u.username, ud.fname, ud.lname, ud.address, ud.phone, 
+                            FROM user as u JOIN userDetails as ud 
+                            ON u.id = ud.userid 
+                            WHERE u.type=0
